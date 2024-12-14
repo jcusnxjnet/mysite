@@ -16,9 +16,11 @@
   <div class="relative max-w-screen-lg mx-auto px-3">
     {% include "partials/header.njk" %}
     <main class="pt-8">
+      <article>
       {% block content %}
       {{ content | safe }}
       {% endblock %}
+     </article>
     </main>
 
   </div>
