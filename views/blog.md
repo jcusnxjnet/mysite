@@ -9,8 +9,8 @@ layout: base
 {% for post in yearPosts %}
 
 <div class="flex pt-1">
-<div class="w-20 text-slate-500">{{ post.data.date | postDate }}</div>
-<div class="text-sky-600 hover:font-semibold"><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+<div class="w-20 text-other">{{ post.data.date | postDate }}</div>
+<div class="text-link hover:font-semibold"><a href="{{ post.url }}">{{ post.data.title }}</a></div>
 </div>
 
 {% endfor %}
