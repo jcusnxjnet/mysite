@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.authorName }}">
+  <link rel="canonical" href="{{ site.url }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>{{ title }}</title>
+</head>
+
+<body class="font-mono tracking-tight bg-slate-200">
+  <div class="relative max-w-screen-lg mx-auto">
+    {% include "partials/header.njk" %}
+    <main class="pt-8">
+      {% block content %}
+      {{ content | safe }}
+      {% endblock %}
+    </main>
+
+  </div>
+</body>
+
+</html>
