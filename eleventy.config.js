@@ -7,6 +7,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("views/assets/img");
   eleventyConfig.addPassthroughCopy("views/assets/js");
 
+  // SHORTCODES
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  
   // FILTERS
   eleventyConfig.addFilter("postDate", (dateObj, format = "LLL d") => {
     return DateTime.fromJSDate(dateObj).toFormat(format);
