@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import 'dotenv/config';
 
 export default function (eleventyConfig) {
 
@@ -9,10 +10,20 @@ export default function (eleventyConfig) {
 
   // SHORTCODES
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  
+
   // FILTERS
+  
+  // Post Date
   eleventyConfig.addFilter("postDate", (dateObj, format = "LLL d") => {
     return DateTime.fromJSDate(dateObj).toFormat(format);
+  });
+
+  //withinDateRange (for daily running workouts)
+  eleventyConfig.addFilter("withinDateRange", (dateStr, startDateStr, endDateStr) => {
+    const date = new Date(dateStr);
+    const startDate = new Date(startDateStr);
+    const endDate = new Date(endDateStr);
+    return date >= startDate && date <= endDate;
   });
 
   // COLLECTIONS
@@ -21,16 +32,16 @@ export default function (eleventyConfig) {
     const posts = collection.getFilteredByTag('post').reverse();
     const years = posts.map(post => post.date.getFullYear());
     const uniqueYears = [...new Set(years)];
-  
+
     const postsByYear = uniqueYears.reduce((prev, year) => {
       const filteredPosts = posts.filter(post => post.date.getFullYear() === year);
-  
+
       return [
         ...prev,
         [year, filteredPosts]
       ]
     }, []);
-  
+
     return postsByYear;
   });
 
