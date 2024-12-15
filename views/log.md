@@ -4,7 +4,7 @@ layout: base
 ---
 {% if google.monthly.length %}
 <div class="overflow-x-auto">
-  <table class="min-w-96 w-2/3 border-collapse text-sm mx-auto">
+  <table class="min-w-[30rem] w-full border-collapse text-sm">
     <thead>
       <tr class="text-other">
         <th>Month</th>
@@ -25,7 +25,7 @@ layout: base
       {% for item in google.monthly | sort(attribute='date') | reverse %}
       <tr class="text-center border-t  border-line">
         <td><a href="/log/{{ item.id }}/" class="text-link">{{
-            item.month }}</a></td>
+            item.month | date({ year: "numeric", month: "short" }) }}</a></td>
         <td>{{ item.distance }}</td>
         <td>{{ item.duration }}</td>
         <td>{{ item.pace }}</td>

@@ -12,11 +12,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // FILTERS
-  
+
   // Post Date
   eleventyConfig.addFilter("postDate", (dateObj, format = "LLL d") => {
     return DateTime.fromJSDate(dateObj).toFormat(format);
   });
+
+  // Date (to format string dates fetched via API)
+  eleventyConfig.addFilter("date", function (dateVal, options = { year: "numeric", month: "short", day: "numeric" }) {
+    var theDate = new Date(dateVal);
+    const locale = "en-GB"; // Default locale
+    return theDate.toLocaleDateString(locale, options);
+});
 
   //withinDateRange (for daily running workouts)
   eleventyConfig.addFilter("withinDateRange", (dateStr, startDateStr, endDateStr) => {
