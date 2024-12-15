@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,13 +25,14 @@
     {% include "partials/header.njk" %}
     <main class="pt-8 min-h-[calc(100vh-10rem)] md:min-h-[calc(100vh-13rem)]">
       <article>
-      {% block content %}
-      {{ content | safe }}
-      {% endblock %}
-     </article>
+        {% block content %}
+        {{ content | safe }}
+        {% endblock %}
+      </article>
     </main>
     {% include "partials/footer.njk" %}
   </div>
+  <script src="/assets/js/darkmode.js"></script>
 </body>
 
 </html>
