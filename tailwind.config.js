@@ -3,6 +3,15 @@ export default {
   content: ["./views/**/*.{html,js,njk,md}"],
   darkMode: 'class',
   theme: {
+    fontSize: {
+      sm: '0.875rem',
+      base: '0.95rem',
+      xl: '1.25rem',
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+    },
     extend: {
       colors: {
         'link': '#0284c7',
