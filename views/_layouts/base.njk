@@ -3,7 +3,6 @@
 
 <head>
   <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
     } else {
@@ -17,6 +16,7 @@
   <meta name="author" content="{{ site.authorName }}">
   <link rel="canonical" href="{{ site.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
+  
   <title>{{ title }}</title>
 </head>
 
