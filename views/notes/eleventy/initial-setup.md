@@ -96,7 +96,8 @@ export const config = {
 └── views                   // custom override of default folder 
 │    ├── _data              // global data folder
 │    │     └── site.js      
-│    │     └── partials          
+│    ├── _includes
+│    │     └── partials   
 │    ├── _layouts           // custom override of default folder 
 │    ├── assets             // custom folder
 │    │     ├── css          
