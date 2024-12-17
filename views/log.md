@@ -2,8 +2,15 @@
 title: log
 layout: base
 ---
+<div>
+  <canvas 
+  id="myChart" 
+  data-chart='{{ google.monthly | jsonify }}'
+  data-locale='{{ site.locale }}'>
+  </canvas>
+</div>
 {% if google.monthly.length %}
-<div class="overflow-x-auto">
+<div class="overflow-x-auto pt-8">
   <table class="min-w-[30rem] w-full border-collapse text-sm">
     <thead>
       <tr class="text-other">

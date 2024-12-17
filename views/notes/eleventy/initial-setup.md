@@ -2,39 +2,47 @@
 title: Initial setup
 templateEngineOverride: md
 ---
-<h2 class="font-semibold text-lg">Create package.json</h2>
+<h2 class="font-semibold">Sources</h2>
+<ol class="pl-11 text-other" style="list-style-type: lower-roman;">
+<li><a href="https://11ty.recipes" class="text-link">11ty Recipes</a></li>
+<li><a href="https://www.11ty.dev/docs/" class="text-link">Get Started (11ty Documentation)</a></li>
+</ol>
+
+<h2 class="font-semibold pt-8">Create package.json</h2>
 
 ```html
 npm init -y
 ```
 
-<h2 class="font-semibold text-lg pt-4">Use ESM and not commonJS</h2>
+<h2 class="font-semibold pt-4">Use ESM and not commonJS</h2>
 
 ```js
 npm pkg set type="module" // Modifies package.json
 ```
 
-<h2 class="font-semibold text-lg pt-4">Eleventy installation</h2>
+<h2 class="font-semibold pt-4">Eleventy installation</h2>
 
 ```js
 npm install @11ty/eleventy
 ```
 
-<h2 class="font-semibold text-lg pt-4">Create index file</h2>
+<h2 class="font-semibold pt-4">Create index file</h2>
 
 ```js
 echo '# My Eleventy Project' > index.md
 ```
 
-<h2 class="font-semibold text-lg pt-4">Create .gitignore</h2>
+<h2 class="font-semibold pt-4">Create .gitignore</h2>
 
 ```js
 dist          // output directory defined in eleventy.config.js
 node_modules
 .DS_Store
+.vscode
+.env
 ```
 
-<h2 class="font-semibold text-lg pt-4">Create eleventy.config.js</h2>
+<h2 class="font-semibold pt-4">Create eleventy.config.js</h2>
 
 ```js
 export default function(eleventyConfig) {
@@ -42,7 +50,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-semibold text-lg pt-4">Modify scripts in package.json</h2>
+<h2 class="font-semibold pt-4">Modify scripts in package.json</h2>
 
 ```json
 "scripts": {
@@ -51,7 +59,7 @@ export default function(eleventyConfig) {
 }
 ```
 
-<h2 class="font-semibold text-lg pt-4">Define default directories in eleventy.config.js</h2>
+<h2 class="font-semibold pt-4">Change default directories in eleventy.config.js</h2>
 
 ```js
 export default function(eleventyConfig) {
@@ -67,7 +75,7 @@ export const config = {
   };
 ```
 
-<h2 class="font-semibold text-lg pt-4">Define default template engine in eleventy.config.js</h2>
+<h2 class="font-semibold pt-4">Define default template engine in eleventy.config.js</h2>
 
 ```js
 export default function(eleventyConfig) {
@@ -80,32 +88,30 @@ export const config = {
 };
 ```
 
-<h2 class="font-semibold text-lg pt-4">Create directories</h2>
+<h2 class="font-semibold pt-4">Create directories</h2>
 
 ```js
-└── views                   // default override (defined in configuration)
-│    ├── _data              // default
-│    ├── _includes          // default
-│    │      └── partials    // custom folder       
-│    ├── _layouts           // default override (defined in configuration)
-│    ├── assets             // custom folder 
-│    │     ├── css          // custom folder 
-│    │     ├── img          // custom folder 
-│    │     └── js           // custom folder 
-│    ├── page               // custom folder 
-│    │     └── page.json    // default Front Matter Data 
-│    ├── note               // custom folder 
+└── views                   // custom override of default folder 
+│    ├── _data              // global data folder
+│    │     └── site.js      
+│    │     └── partials          
+│    ├── _layouts           // custom override of default folder 
+│    ├── assets             // custom folder
+│    │     ├── css          
+│    │     ├── img          
+│    │     └── js           
+│    ├── note               // custom folder
 │    │     └── note.json    // default Front Matter Data 
-│    ├── post               // custom folder 
+│    ├── post               // custom folder
 │    │     └── post.json    // default Front Matter Data 
-│    └── index.md           // landing page
-├── .eleventy.js            // stays in root
-├── .gitignore              // stays in root
-├── package.json            // stays in root
-└── package-lock.json       // stays in root
+│    └── index.md           
+├── .eleventy.js            
+├── .gitignore              
+├── package.json            
+└── package-lock.json       
 ```
 
-<h2 class="font-semibold text-lg pt-4">addPassthroughCopy in eleventy.config.js</h2>
+<h2 class="font-semibold pt-4">Define addPassthroughCopy in eleventy.config.js</h2>
 
 ```js
 export default function(eleventyConfig) {
@@ -116,11 +122,11 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("views/assets/js");
 };
 ```
-<h2 class="font-semibold text-lg pt-4">Create basic layout base.njk</h2>
+<h2 class="font-semibold pt-4">Create basic layout base.njk</h2>
 
 ```html
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -134,24 +140,25 @@ export default function(eleventyConfig) {
   </body>
 </html>
 ```
-<h2 class="font-semibold text-lg pt-4">Define default Front Matter Data, i.e. create folder specific json files</h2>
+<h2 class="font-semibold pt-4">Define default Front Matter Data, i.e. create folder specific json files</h2>
 
 ```json
 {
     "layout": "base" 
   }
 ```
-<h2 class="font-semibold text-lg pt-4">Create and reference CSS stylesheet</h2>
+<h2 class="font-semibold pt-4">Create and reference CSS stylesheet</h2>
 
 ```html
 <head>
    <link href="/assets/css/style.css" rel="stylesheet"> 
 </head>
 ```
-<h2 class="font-semibold text-lg pt-4">Define permalink for index file (only if moved to a subfolder)</h2>
+<h2 class="font-semibold pt-4">Define permalink for index file (if moved to a subfolder)</h2>
 
 ```yaml
 ---
 permalink: "/index.html"
 ---
 ```
+

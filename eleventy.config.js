@@ -58,7 +58,13 @@ export default function (eleventyConfig) {
     return date >= startDate && date <= endDate;
   });
 
+  // Add a custom jsonify filter
+  eleventyConfig.addFilter("jsonify", function(value) {
+    return JSON.stringify(value);
+  });
+
   // COLLECTIONS
+
   // Posts by year
   eleventyConfig.addCollection("postsByYear", (collection) => {
     const posts = collection.getFilteredByTag('post').reverse();
