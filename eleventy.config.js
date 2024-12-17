@@ -1,6 +1,7 @@
 import { DateTime } from "luxon";
 import 'dotenv/config';
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function (eleventyConfig) {
 
@@ -13,6 +14,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // PLUGINS
+  //syntax highlighting
+  eleventyConfig.addPlugin(syntaxHighlight);
   //rss feed
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom", // or "rss", "json"
