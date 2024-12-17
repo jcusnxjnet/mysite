@@ -3,9 +3,11 @@ title: Initial setup
 templateEngineOverride: md
 ---
 <h2 class="font-semibold">Sources</h2>
-<ol class="pl-11 text-other" style="list-style-type: lower-roman;">
+<ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://11ty.recipes" class="text-link">11ty Recipes</a></li>
 <li><a href="https://www.11ty.dev/docs/" class="text-link">Get Started (11ty Documentation)</a></li>
+<li><a href="https://davidea.st/articles/11ty-tips-i-wish-i-knew-from-the-start/" class="text-link">11ty tips
+I wish I knew from the start</a></li>
 </ol>
 
 <h2 class="font-semibold pt-8">Create package.json</h2>
