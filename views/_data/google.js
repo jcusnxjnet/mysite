@@ -10,7 +10,7 @@ export default async function () {
     const range1 = 'log!A:I'; 
     const range2 = 'monthly!A:I';  
 
-    if (!apiKey || !sheetId || !range1 || !range2) {
+    if (!apiKey || !sheetId) {
         throw new Error("Missing required environment variables.");
     }
 
