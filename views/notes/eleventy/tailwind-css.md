@@ -6,24 +6,24 @@ eleventyNavigation:
   parent: Eleventy
   order: 3
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://tailwindcss.com/docs/installation" class="text-link">Official Documentation</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Installation (Tailwind CLI tool)</h2>
+<h2 class="font-bold pt-8">Installation (Tailwind CLI tool)</h2>
 
 ```html
 npm install -D tailwindcss 
 ```
 
-<h2 class="font-semibold pt-4">Create configuration file - tailwind.config.js</h2>
+<h2 class="font-bold pt-4">Create configuration file - tailwind.config.js</h2>
 
 ```html
 npx tailwindcss init
 ```
 
-<h2 class="font-semibold pt-4">Template paths configuration</h2>
+<h2 class="font-bold pt-4">Template paths configuration</h2>
 
 `/tailwind.config.js`
 
@@ -38,7 +38,7 @@ export default {
 }
 ```
 
-<h2 class="font-semibold pt-4">Adding the Tailwind directives</h2>
+<h2 class="font-bold pt-4">Adding the Tailwind directives</h2>
 
 `/assets/css/tailwind.css`
 
@@ -49,13 +49,13 @@ export default {
 ```
 
 
-<h2 class="font-semibold pt-4">Execute Tailwind CLI build process</h2>
+<h2 class="font-bold pt-4">Execute Tailwind CLI build process</h2>
 
 ```html
 npx tailwindcss -i ./views/assets/css/tailwind.css -o ./dist/assets/css/style.css
 ```
 
-<h2 class="font-semibold pt-4">Add Tailwind output file in base layout</h2>
+<h2 class="font-bold pt-4">Add Tailwind output file in base layout</h2>
 
 `/views/_layouts/base.njk`
 
@@ -65,7 +65,7 @@ npx tailwindcss -i ./views/assets/css/tailwind.css -o ./dist/assets/css/style.cs
 </head>
 ```
 
-<h2 class="font-semibold pt-4">Adjust scripts in package.json</h2>
+<h2 class="font-bold pt-4">Adjust scripts in package.json</h2>
 
 `/package.json`
 

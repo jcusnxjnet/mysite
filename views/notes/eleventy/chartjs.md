@@ -6,12 +6,12 @@ eleventyNavigation:
   parent: Eleventy
   order: 7
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://www.chartjs.org/docs/latest/getting-started/" class="text-link">Official Documentation</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Installation (CDN)</h2>
+<h2 class="font-bold pt-8">Installation (CDN)</h2>
 
 `/views/_layouts/base.njk`
 
@@ -21,7 +21,7 @@ eleventyNavigation:
 </head>
 ```
 
-<h2 class="font-semibold pt-4">js file with chart (example of bar chart)</h2>
+<h2 class="font-bold pt-4">js file with chart (example of bar chart)</h2>
 
 `/views/assets/js/barchart.js`
 
@@ -48,7 +48,7 @@ const ctx = document.getElementById('myChart');
   });
 ```
 
-<h2 class="font-semibold pt-4">Add script to base layout</h2>
+<h2 class="font-bold pt-4">Add script to base layout</h2>
 
 `/views/_layouts/base.njk`
 
@@ -58,7 +58,7 @@ const ctx = document.getElementById('myChart');
 </body>
 ```
 
-<h2 class="font-semibold pt-4">Usage</h2>
+<h2 class="font-bold pt-4">Usage</h2>
 
 ```html
 <div>

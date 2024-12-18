@@ -6,18 +6,18 @@ eleventyNavigation:
   parent: Eleventy
   order: 8
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://github.com/motdotla/dotenv" class="text-link">GitHub Repository</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Installation</h2>
+<h2 class="font-bold pt-8">Installation</h2>
 
 ```html
 npm install dotenv --save
 ```
 
-<h2 class="font-semibold pt-4">Configuration</h2>
+<h2 class="font-bold pt-4">Configuration</h2>
 
 `/eleventy.config.js`
 
@@ -35,7 +35,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-semibold pt-4">Create .env file</h2>
+<h2 class="font-bold pt-4">Create .env file</h2>
 
 `/.env`
 
@@ -43,7 +43,7 @@ export default function(eleventyConfig) {
 GOOGLE_SHEETS_API_KEY=your-actual-google-sheets-API-key 
 ```
 
-<h2 class="font-semibold pt-4">!!! ADD .env file to .gitignore !!!</h2>
+<h2 class="font-bold pt-4">!!! ADD .env file to .gitignore !!!</h2>
 
 `/.gitignore`
 
@@ -55,7 +55,7 @@ node_modules
 .env
 ```
 
-<h2 class="font-semibold pt-4 pb-2"> Set up environment variables in Netlify</h2>
+<h2 class="font-bold pt-4 pb-2"> Set up environment variables in Netlify</h2>
 
 Go to Site settings > Environment variables > Add variable
 

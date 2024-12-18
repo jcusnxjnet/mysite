@@ -6,13 +6,13 @@ eleventyNavigation:
   parent: Eleventy
   order: 4
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://tailwindcss.com/docs/dark-mode" class="text-link">Official Documentation</a></li>
 <li><a href="https://flowbite.com/docs/customize/dark-mode/" class="text-link">Tailwind CSS Dark Mode - Flowbite</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Modify Tailwind CSS configuration file</h2>
+<h2 class="font-bold pt-8">Modify Tailwind CSS configuration file</h2>
 
 `/tailwind.config.js`
 
@@ -28,7 +28,7 @@ export default {
 }
 ```
 
-<h2 class="font-semibold pt-4">Add dark class in html element</h2>
+<h2 class="font-bold pt-4">Add dark class in html element</h2>
 
 `/views/_layouts/base.njk`
 
@@ -44,7 +44,7 @@ export default {
 </html>
 ```
 
-<h2 class="font-semibold pt-4">Check user preference on page load</h2>
+<h2 class="font-bold pt-4">Check user preference on page load</h2>
 
 `/views/_layouts/base.njk`
 
@@ -67,7 +67,7 @@ export default {
 </html>
 ```
 
-<h2 class="font-semibold pt-4">Add button to change color preference manually</h2>
+<h2 class="font-bold pt-4">Add button to change color preference manually</h2>
 
 `/views/_layouts/base.njk`
 
@@ -86,7 +86,7 @@ export default {
 </html>
 ```
 
-<h2 class="font-semibold pt-4">Handle click events on the button</h2>
+<h2 class="font-bold pt-4">Handle click events on the button</h2>
 
 `views/assets/js/darkmode.js`
 
@@ -133,7 +133,7 @@ themeToggleBtn.addEventListener('click', function() {
 });
 ```
 
-<h2 class="font-semibold pt-4">Add script reference in base layout</h2>
+<h2 class="font-bold pt-4">Add script reference in base layout</h2>
 
 `/views/_layouts/base.njk`
 

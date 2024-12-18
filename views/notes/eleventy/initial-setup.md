@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: Eleventy
   order: 1
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://flowbite.com/docs/customize/dark-mode/" class="text-link">11ty Recipes</a></li>
 <li><a href="https://www.11ty.dev/docs/" class="text-link">Get Started (11ty Documentation)</a></li>
@@ -14,19 +14,19 @@ eleventyNavigation:
 I wish I knew from the start</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Create package.json</h2>
+<h2 class="font-bold pt-8">Create package.json</h2>
 
 ```html
 npm init -y
 ```
 
-<h2 class="font-semibold pt-4">Use ESM and not commonJS</h2>
+<h2 class="font-bold pt-4">Use ESM and not commonJS</h2>
 
 ```js
 npm pkg set type="module" // Modifies package.json
 ```
 
-<h2 class="font-semibold pt-4">Eleventy installation</h2>
+<h2 class="font-bold pt-4">Eleventy installation</h2>
 
 ```js
 npm install @11ty/eleventy
@@ -104,7 +104,7 @@ export const config = {
 };
 ```
 
-<h2 class="font-semibold pt-4">Create directories</h2>
+<h2 class="font-bold pt-4">Create directories</h2>
 
 ```js
 └── views                   // custom override of default folder 
@@ -129,7 +129,7 @@ export const config = {
 └── package-lock.json       
 ```
 
-<h2 class="font-semibold pt-4">Define addPassthroughCopy in eleventy.config.js</h2>
+<h2 class="font-bold pt-4">Define addPassthroughCopy in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -142,7 +142,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("views/assets/js");
 };
 ```
-<h2 class="font-semibold pt-4">Create basic layout base.njk</h2>
+<h2 class="font-bold pt-4">Create basic layout base.njk</h2>
 
 `/views/_layouts/base.njk`
 
@@ -162,7 +162,7 @@ export default function(eleventyConfig) {
   </body>
 </html>
 ```
-<h2 class="font-semibold pt-4">Define default Front Matter Data, i.e. create folder specific json files</h2>
+<h2 class="font-bold pt-4">Define default Front Matter Data, i.e. create folder specific json files</h2>
 
 `/views/notes/notes.json`
 
@@ -171,14 +171,14 @@ export default function(eleventyConfig) {
     "layout": "base" 
   }
 ```
-<h2 class="font-semibold pt-4">Create and reference CSS stylesheet</h2>
+<h2 class="font-bold pt-4">Create and reference CSS stylesheet</h2>
 
 ```html
 <head>
    <link href="/assets/css/style.css" rel="stylesheet"> 
 </head>
 ```
-<h2 class="font-semibold pt-4">Define permalink for index file (if moved to a subfolder)</h2>
+<h2 class="font-bold pt-4">Define permalink for index file (if moved to a subfolder)</h2>
 
 ```yaml
 ---

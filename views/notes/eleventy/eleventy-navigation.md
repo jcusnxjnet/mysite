@@ -6,18 +6,18 @@ eleventyNavigation:
     parent: Eleventy
     order: 2
 ---
-<h2 class="font-semibold">Sources</h2>
+<h2 class="font-bold">Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://www.11ty.dev/docs/plugins/navigation/" class="text-link">Official Documentation</a></li>
 </ol>
 
-<h2 class="font-semibold pt-8">Installation</h2>
+<h2 class="font-bold pt-8">Installation</h2>
 
 ```js
 npm install @11ty/eleventy-navigation
 ```
 
-<h2 class="font-semibold pt-4">Configuration (ESM)</h2>
+<h2 class="font-bold pt-4">Configuration (ESM)</h2>
 
 `/eleventy.config.js`
 
@@ -29,7 +29,7 @@ export default function (eleventyConfig) {
 };
 ```
 
-<h2 class="font-semibold pt-4">Front Matter Data</h2>
+<h2 class="font-bold pt-4">Front Matter Data</h2>
 
 ```yaml
 ---
@@ -44,7 +44,7 @@ permalink: false           # to prevent a file creation in Eleventy output site
 ---
 ```
 
-<h2 class="font-semibold pt-4">Usage - navigation (Nunjucks)</h2>
+<h2 class="font-bold pt-4">Usage - navigation (Nunjucks)</h2>
 
 ```js
 // returns all pages across all collections
@@ -54,7 +54,7 @@ permalink: false           # to prevent a file creation in Eleventy output site
 {% set navPages = collections.planets | eleventyNavigation("Mars") %}
 ```
  
-<h2 class="font-semibold pt-4">Usage - breadcrumb trail (Nunjucks)</h2>
+<h2 class="font-bold pt-4">Usage - breadcrumb trail (Nunjucks)</h2>
 
 ```js
 // returns breadcrumb trail for specific navigation key (Mars)
