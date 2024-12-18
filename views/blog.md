@@ -1,6 +1,10 @@
 ---
 title: Blog
 layout: base
+eleventyNavigation:
+    key: Blog
+    parent: jcusnxj
+    order: 3
 ---
 {% for year, yearPosts in collections.postsByYear %}
 

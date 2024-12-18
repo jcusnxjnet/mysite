@@ -1,6 +1,10 @@
 ---
 title: log
 layout: base
+eleventyNavigation:
+    key: Log
+    parent: jcusnxj
+    order: 3
 ---
 <div>
   <canvas 

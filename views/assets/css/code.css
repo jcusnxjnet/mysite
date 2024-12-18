@@ -5,13 +5,17 @@
  * @author Ayush Saini <@AyushCodes on Twitter>
  */
 
+ code {
+    color: #64748b;
+ }
+
  code[class*='language-'],
  pre[class*='language-'] {
      color: #d6e7ff;
      background: #030314;
      text-shadow: none;
      font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-     font-size: 1em;
+     font-size: 0.9rem;
      line-height: 1.5;
      letter-spacing: .2px;
      white-space: pre;

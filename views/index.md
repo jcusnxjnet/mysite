@@ -1,9 +1,10 @@
 ---
 title: Home
 layout: base
+eleventyNavigation:
+    key: jcusnxj
 ---
-<div class="font-semibold">Hi there!</div>
+<div class="font-bold">Hi there!</div>
 <p class="pt-1">I'm František. Welcome to my personal website!</p>
 
-<p class="pt-4">...</p>
 
