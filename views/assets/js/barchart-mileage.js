@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Convert a rem unit to pixels (assuming 1rem = 16px)
     const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem in px
-    const fontSizeInRem = 1.1; // Example: 1.5rem
+    const fontSizeInRem = 0.95; // Example: 1.5rem
     const fontSizeInPx = fontSizeInRem * remToPx; // Convert rem to pixels
 
     const ctx = canvas.getContext('2d');
@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
             display: true,
             text: 'Monthly distance',
             font: {
-              size: fontSizeInPx // Dynamically set font size in pixels
+              size: fontSizeInPx, // Dynamically set font size in pixels
+              family: 'monospace' // Set font type to monospace
             }
           },
           tooltip: {

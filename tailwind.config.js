@@ -4,9 +4,9 @@ export default {
   darkMode: 'selector',
   theme: {
     fontSize: {
-      sm: '0.875rem',
-      base: '0.9rem',
-      xl: '1.25rem',
+      sm: '0.9rem',
+      base: '0.95rem',
+      xl: '1.1rem',
       '2xl': '1.563rem',
       '3xl': '1.953rem',
       '4xl': '2.441rem',
