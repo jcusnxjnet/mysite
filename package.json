@@ -18,7 +18,9 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "dotenv": "^16.4.7",
     "googleapis": "^144.0.0",
-    "luxon": "^3.5.0"
+    "luxon": "^3.5.0",
+    "photoswipe": "^5.4.4",
+    "photoswipe-dynamic-caption-plugin": "^1.2.7"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.16"

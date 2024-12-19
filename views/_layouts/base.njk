@@ -26,6 +26,8 @@
   <link rel="canonical" href="{{ site.url }}">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/code.css">
+  <link rel="stylesheet" href="/assets/css/photoswipe.css">  
+  <link rel="stylesheet" href="/assets/css/photoswipe-dynamic-caption-plugin.css">
   
   <title>{{ title }}</title>
 </head>
@@ -33,7 +35,7 @@
 <body class="font-mono tracking-tight bg-slate-200 text-base">
   <div class="relative max-w-screen-md mx-auto px-3">
     {% include "partials/header.njk" %}
-    <main class="pt-8 min-h-[calc(100vh-10rem)] md:min-h-[calc(100vh-13rem)]">
+    <main class="pt-8 min-h-[calc(100vh-13rem)] md:min-h-[calc(100vh-16rem)]">
       <article>
         {% block content %}
         {{ content | safe }}
@@ -44,6 +46,7 @@
   </div>
   <script src="/assets/js/darkmode.js"></script>
   <script src="/assets/js/barchart-mileage.js"></script>
+  <script type="module" src="/assets/js/photoswipe.js"></script>
 </body>
 
 </html>

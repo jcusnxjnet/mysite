@@ -32,13 +32,13 @@ npm pkg set type="module" // Modifies package.json
 npm install @11ty/eleventy
 ```
 
-<h2 class="font-semibold pt-4">Create index file</h2>
+<h2 class="font-bold pt-4">Create index file</h2>
 
 ```js
 echo '# My Eleventy Project' > index.md
 ```
 
-<h2 class="font-semibold pt-4">Create .gitignore</h2>
+<h2 class="font-bold pt-4">Create .gitignore</h2>
 
 `/.gitignore`
 
@@ -50,7 +50,7 @@ node_modules
 .env
 ```
 
-<h2 class="font-semibold pt-4">Create eleventy.config.js</h2>
+<h2 class="font-bold pt-4">Create eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -60,7 +60,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-semibold pt-4">Modify scripts in package.json</h2>
+<h2 class="font-bold pt-4">Modify scripts in package.json</h2>
 
 `/package.json`
 
@@ -71,7 +71,7 @@ export default function(eleventyConfig) {
 }
 ```
 
-<h2 class="font-semibold pt-4">Change default directories in eleventy.config.js</h2>
+<h2 class="font-bold pt-4">Change default directories in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -89,7 +89,7 @@ export const config = {
   };
 ```
 
-<h2 class="font-semibold pt-4">Define default template engine in eleventy.config.js</h2>
+<h2 class="font-bold pt-4">Define default template engine in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
