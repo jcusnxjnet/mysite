@@ -1,11 +1,12 @@
 ---
-title: log
+title: Running Log
 layout: base
 eleventyNavigation:
     key: Log
     parent: jcusnxj
     order: 3
 ---
+<h1>{{title}}</h1>
 <div>
   <canvas 
   id="myChart" 
