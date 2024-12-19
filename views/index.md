@@ -5,7 +5,7 @@ eleventyNavigation:
     key: jcusnxj
 ---
 <div class="font-bold">Hi there!</div>
-<p class="pt-1">I'm František. Welcome to my personal website!</p>
+<p class="pt-2">I'm František. Welcome to my personal website!</p>
 
 <p class="pt-2">I've always wanted to have my own website. You know, a place to share my thoughts (naive as they might be) and store whatever notes I find worth keeping. Since I don't have any coding experience, I relied on tools designed for non-programmers. Needless to say, that means giving up control over your own data. Plus, those tools never fully satisfied my needs.</p>
 
