@@ -11,6 +11,9 @@ eleventyNavigation:
 <li><a href="https://photoswipe.com/getting-started/" class="text-link hover:font-bold">Official Documentation</a></li>
 </ol>
 
+<h2 class="font-bold pt-8">Prerequisite</h2>
+<a href="/notes/eleventy/photoswipe/" class="text-link hover:font-bold">PhotoSwipe</a> is installed.
+
 <h2 class="font-bold pt-8">Installation</h2>
 
 ```html
