@@ -2,14 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 96%;
+}
 
 @layer base {
+    body {
+      @apply text-gray-700;
+    }
+
     h1 {
       @apply font-bold;
-      @apply text-xl;
+      @apply pt-4;
+      @apply text-lg;
     }
     h2 {
-      @apply font-bold;
+      
       @apply pt-4;
+      @apply text-lg;
     }
   }
+
+  

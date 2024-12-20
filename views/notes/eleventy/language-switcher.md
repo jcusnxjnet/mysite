@@ -6,12 +6,12 @@ eleventyNavigation:
   parent: Eleventy
   order: 12
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://www.webstoemp.com/blog/language-switcher-multilingual-jamstack-sites/" class="text-link">Language switcher for multilingual JAMstack sites</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Global data</h2>
+<h2>Global data</h2>
 
 `/views/_data/site.js`
 
@@ -30,7 +30,7 @@ export default {
   };
 ```
 
-<h2 class="font-bold pt-4">Add translationKey to Front Matter Data</h2>
+<h2>Add translationKey to Front Matter Data</h2>
 
 `/views/en/notes/introduction.md`
 
@@ -48,7 +48,7 @@ translationKey: "introPage"
 ---
 ```
 
-<h2 class="font-bold pt-4">Language switcher</h2>
+<h2>Language switcher</h2>
 
 `/views/_includes/partials/switcher.njk`
 
@@ -75,7 +75,7 @@ translationKey: "introPage"
 
 {% endfor %}
 ```
-<h2 class="font-bold pt-4">Usage</h2>
+<h2>Usage</h2>
 
 `/views/_layouts/base.njk`
 

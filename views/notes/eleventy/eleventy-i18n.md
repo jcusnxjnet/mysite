@@ -6,19 +6,19 @@ eleventyNavigation:
   parent: Eleventy
   order: 11
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://www.11ty.dev/docs/plugins/i18n/" class="text-link">Official Documentation</a></li>
 <li><a href="https://www.webstoemp.com/blog/multilingual-sites-eleventy/" class="text-link">Multilingual sites with Eleventy</a></li>
 <li><a href="https://www.lenesaile.com/en/blog/internationalization-with-eleventy-20-and-netlify/" class="text-link">Internationalization with Eleventy 2.0 and Netlify</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Instalation</h2>
+<h2>Instalation</h2>
 
 Plugin is bundled with Eleventy and does not require separate installation. 
 
  
-<h2 class="font-bold pt-4">Configuration (ESM)</h2>
+<h2>Configuration (ESM)</h2>
 
 `/eleventy.config.js`
 
@@ -33,7 +33,7 @@ export default function (eleventyConfig) {
 }
 ```
 
-<h2 class="font-bold pt-4">Folder structure</h2>
+<h2>Folder structure</h2>
 
 ```html
 └── views                        
@@ -57,7 +57,7 @@ export default function (eleventyConfig) {
          └── cs.json       // default Front Matter Data for CS markdown files
 ```
 
-<h2 class="font-bold pt-4">Front Matter Data</h2>
+<h2>Front Matter Data</h2>
 
 `/views/en/en.json`
 
@@ -75,7 +75,7 @@ export default function (eleventyConfig) {
   }
 ```
 
-<h2 class="font-bold pt-4">Base layout</h2>
+<h2>Base layout</h2>
 
 `/views/_layouts/base.njk`
 
@@ -86,7 +86,7 @@ export default function (eleventyConfig) {
     ...
 ```
 
-<h2 class="font-bold pt-4">Netlify redirection</h2>
+<h2>Netlify redirection</h2>
 
 `/netlify.toml`
 
@@ -105,7 +105,7 @@ export default function (eleventyConfig) {
   status = 302
 ```
 
-<h2 class="font-bold pt-4">Localized collections (example)</h2>
+<h2>Localized collections (example)</h2>
 
 `/eleventy.config.js`
 
@@ -126,7 +126,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-bold pt-4">Usage of localized collections</h2>
+<h2>Usage of localized collections</h2>
 
 <div class="pt-4">List of posts</div>
 
@@ -149,7 +149,7 @@ export default function(eleventyConfig) {
 </ul>
 ```
 
-<h2 class="font-bold pt-4">Dictionary (ESM)</h2>
+<h2>Dictionary (ESM)</h2>
 
 `/views/_data/languages.js`
 
@@ -167,7 +167,7 @@ export default {
 };
 ```
 
-<h2 class="font-bold pt-4">Accessing dictionary</h2>
+<h2>Accessing dictionary</h2>
 
 
 <div class="pt-4">Using "lang" variable</div>

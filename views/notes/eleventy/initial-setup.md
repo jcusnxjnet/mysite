@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: Eleventy
   order: 1
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://flowbite.com/docs/customize/dark-mode/" class="text-link">11ty Recipes</a></li>
 <li><a href="https://www.11ty.dev/docs/" class="text-link">Get Started (11ty Documentation)</a></li>
@@ -14,31 +14,31 @@ eleventyNavigation:
 I wish I knew from the start</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Create package.json</h2>
+<h2>Create package.json</h2>
 
 ```html
 npm init -y
 ```
 
-<h2 class="font-bold pt-4">Use ESM and not commonJS</h2>
+<h2>Use ESM and not commonJS</h2>
 
 ```js
 npm pkg set type="module" // Modifies package.json
 ```
 
-<h2 class="font-bold pt-4">Eleventy installation</h2>
+<h2>Eleventy installation</h2>
 
 ```js
 npm install @11ty/eleventy
 ```
 
-<h2 class="font-bold pt-4">Create index file</h2>
+<h2>Create index file</h2>
 
 ```js
 echo '# My Eleventy Project' > index.md
 ```
 
-<h2 class="font-bold pt-4">Create .gitignore</h2>
+<h2>Create .gitignore</h2>
 
 `/.gitignore`
 
@@ -50,7 +50,7 @@ node_modules
 .env
 ```
 
-<h2 class="font-bold pt-4">Create eleventy.config.js</h2>
+<h2>Create eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -60,7 +60,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-bold pt-4">Modify scripts in package.json</h2>
+<h2>Modify scripts in package.json</h2>
 
 `/package.json`
 
@@ -71,7 +71,7 @@ export default function(eleventyConfig) {
 }
 ```
 
-<h2 class="font-bold pt-4">Change default directories in eleventy.config.js</h2>
+<h2>Change default directories in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -89,7 +89,7 @@ export const config = {
   };
 ```
 
-<h2 class="font-bold pt-4">Define default template engine in eleventy.config.js</h2>
+<h2>Define default template engine in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -104,7 +104,7 @@ export const config = {
 };
 ```
 
-<h2 class="font-bold pt-4">Create directories</h2>
+<h2>Create directories</h2>
 
 ```js
 └── views                   // custom override of default folder 
@@ -129,7 +129,7 @@ export const config = {
 └── package-lock.json       
 ```
 
-<h2 class="font-bold pt-4">Define addPassthroughCopy in eleventy.config.js</h2>
+<h2>Define addPassthroughCopy in eleventy.config.js</h2>
 
 `/eleventy.config.js`
 
@@ -142,7 +142,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("views/assets/js");
 };
 ```
-<h2 class="font-bold pt-4">Create basic layout base.njk</h2>
+<h2>Create basic layout base.njk</h2>
 
 `/views/_layouts/base.njk`
 
@@ -162,7 +162,7 @@ export default function(eleventyConfig) {
   </body>
 </html>
 ```
-<h2 class="font-bold pt-4">Define default Front Matter Data, i.e. create folder specific json files</h2>
+<h2>Define default Front Matter Data, i.e. create folder specific json files</h2>
 
 `/views/notes/notes.json`
 
@@ -171,14 +171,14 @@ export default function(eleventyConfig) {
     "layout": "base" 
   }
 ```
-<h2 class="font-bold pt-4">Create and reference CSS stylesheet</h2>
+<h2>Create and reference CSS stylesheet</h2>
 
 ```html
 <head>
    <link href="/assets/css/style.css" rel="stylesheet"> 
 </head>
 ```
-<h2 class="font-bold pt-4">Define permalink for index file (if moved to a subfolder)</h2>
+<h2>Define permalink for index file (if moved to a subfolder)</h2>
 
 ```yaml
 ---

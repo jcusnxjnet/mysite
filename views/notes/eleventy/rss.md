@@ -6,18 +6,18 @@ eleventyNavigation:
     parent: Eleventy
     order: 5
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://www.11ty.dev/docs/plugins/rss/" class="text-link">Official Documentation</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Installation</h2>
+<h2>Installation</h2>
 
 ```html
 npm install @11ty/eleventy-plugin-rss
 ```
  
-<h2 class="font-bold pt-4">Configuration (ESM)</h2>
+<h2>Configuration (ESM)</h2>
 
 `/eleventy.config.js`
 
@@ -46,7 +46,7 @@ export default function (eleventyConfig) {
 };
 ```
 
-<h2 class="font-bold pt-4">Adjust base layout</h2>
+<h2>Adjust base layout</h2>
 
 `/views/_layouts/base.njk`
 

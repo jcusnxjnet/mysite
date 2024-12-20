@@ -6,19 +6,19 @@ eleventyNavigation:
   parent: Eleventy
   order: 10
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://11ty.rocks/eleventyjs/dates/" class="text-link hover:font-bold">11ty Date Shortcodes and Filters</a></li>
 <li><a href="https://moment.github.io/luxon/" class="text-link hover:font-bold">Official Documentation</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Installation</h2>
+<h2>Installation</h2>
 
 ```txt
 npm install --save luxon
 ```
 
-<h2 class="font-bold pt-4">Configuration</h2>
+<h2>Configuration</h2>
 
 `/eleventy.config.js`
 
@@ -30,7 +30,7 @@ export default function(eleventyConfig) {
 };
 ```
 
-<h2 class="font-bold pt-4">Usage - shortcode to get the current year</h2>
+<h2>Usage - shortcode to get the current year</h2>
 
 `/eleventy.config.js`
 
@@ -48,7 +48,7 @@ export default function(eleventyConfig) {
 </footer>
 ```
 
-<h2 class="font-bold pt-4">Usage - filter to format dates</h2>
+<h2>Usage - filter to format dates</h2>
 
 `/eleventy.config.js`
 

@@ -6,12 +6,12 @@ eleventyNavigation:
   parent: Eleventy
   order: 9
 ---
-<h2 class="font-bold">Sources</h2>
+<h2>Sources</h2>
 <ol class="pl-14 text-other" style="list-style-type: lower-roman;">
 <li><a href="https://chatgpt.com" class="text-link hover:font-bold">ChatGPT</a></li>
 </ol>
 
-<h2 class="font-bold pt-8">Enable Google Sheets API</h2>
+<h2>Enable Google Sheets API</h2>
 <ul class="list-disc pl-8 pt-4">
 <li>Go to <a href="https://console.cloud.google.com" class="text-link hover:font-bold">Google Cloud Console</a></li>
 <li>Create new project or use existing one</li>
@@ -20,18 +20,18 @@ eleventyNavigation:
 <li>Edit newly created API key and in <div class="font-semibold inline text-other">API Restriction</div> section select <div class="font-semibold inline text-other">Restrict key </div> and then <div class="font-semibold inline text-other">Google Sheets API</div></li>
 </ul>
 
-<h2 class="font-bold pt-4">Google Sheet access rights</h2>
+<h2>Google Sheet access rights</h2>
 <ul class="list-disc pl-8 pt-4">
 <li>Make your google sheet accessible by <div class="font-semibold inline text-other">Anyone with the link</div></li>
 </ul>
 
-<h2 class="font-bold pt-4">googleapis library</h2>
+<h2>googleapis library</h2>
 
 ```txt
 npm install googleapis
 ```
 
-<h2 class="font-bold pt-4">Fetch data from Google Sheets</h2>
+<h2>Fetch data from Google Sheets</h2>
 <div class="text-other italic">An example of code retrieving data (for each row it fetches data in columns A - C) from two different sheets in single spreadsheet.</div>
 <br>
 
@@ -100,7 +100,7 @@ export default async function () {
 }
 ```
 
-<h2 class="font-bold pt-4">.env file</h2>
+<h2>.env file</h2>
 <ul class="list-disc pl-8 pt-4 pb-4">
 <li>Follow the instructions in <a href="/notes/eleventy/dotenv/" class="text-link">dotenv</a></li>
 <li>.env file should contain:</li>
@@ -114,7 +114,7 @@ GOOGLE_SHEET_ID=actual-google-sheet-id
 ```
 
 
-<h2 class="font-bold pt-4">Usage</h2>
+<h2>Usage</h2>
 
 ```html
 <ul>
