@@ -16,9 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const remToPx = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem in px
     const fontSizeInRem = 1; // Example: 1.5rem
     const fontSizeInPx = fontSizeInRem * remToPx; // Convert rem to pixels
+    
+    // Function to get dynamic grid color based on the current theme
+    function getGridColor() {
+    const isDarkMode = document.documentElement.classList.contains('dark');
+    return isDarkMode ? '#334155' : '#cbd5e1'; // dark : light mode
+  }
+
+    // Get initial grid color
+    let gridColor = getGridColor();
 
     const ctx = canvas.getContext('2d');
-    new Chart(ctx, {
+    let chart = new Chart(ctx, {
       type: 'bar',
       data: {
         labels: labels,
@@ -36,9 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
           title: {
             display: true,
             text: 'Monthly distance',
+            color: '#64748b',
             font: {
               size: fontSizeInPx, // Dynamically set font size in pixels
-              family: 'monospace' // Set font type to monospace
             }
           },
           tooltip: {
@@ -47,7 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         },
         scales: {
+          x: {
+            grid: {
+              color: gridColor, // Initial grid color
+            }
+          },
           y: {
+            grid: {
+              color: gridColor, // Initial grid color
+            },
             beginAtZero: true,
             title: {
               display: true, // Display the Y-axis label
@@ -61,5 +78,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     });
+
+    // Update chart on theme toggle
+  const themeToggleBtn = document.getElementById('theme-toggle');
+
+  themeToggleBtn.addEventListener('click', () => {
+    // Recalculate grid color
+    const newGridColor = getGridColor();
+    console.log("New Grid Color:", newGridColor); // Debugging log
+
+    // Explicitly update the chart options
+    chart.options.scales.x.grid.color = newGridColor;
+    chart.options.scales.y.grid.color = newGridColor;
+
+    // Force Chart.js to re-render
+    chart.update();
   });
+
+  });
+
+
+
+
   
