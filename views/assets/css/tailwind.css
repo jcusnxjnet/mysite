@@ -7,20 +7,21 @@ html {
 }
 
 @layer base {
-    body {
-      @apply text-slate-800;
-    }
-
-    h1 {
-      @apply font-semibold;
-      @apply pt-4;
-      @apply text-lg;
-    }
-    h2 {
-      @apply font-semibold;
-      @apply py-4;
-      @apply text-lg;
-    }
+  body {
+    @apply text-slate-800;
   }
+
+  h1 {
+    @apply font-semibold;
+    @apply pt-4;
+    @apply text-lg;
+  }
+  h2 {
+    @apply font-medium;
+    @apply py-4;
+    @apply text-lg;
+  }
+  
+}
 
   
