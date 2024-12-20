@@ -55,7 +55,7 @@ node_modules
 .env
 ```
 
-<h2pb-2"> Set up environment variables in Netlify</h2>
+<h2> Set up environment variables in Netlify</h2>
 
 Go to Site settings > Environment variables > Add variable
 

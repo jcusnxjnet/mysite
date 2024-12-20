@@ -17,8 +17,8 @@ html {
       @apply text-lg;
     }
     h2 {
-      
-      @apply pt-4;
+      @apply font-semibold;
+      @apply py-4;
       @apply text-lg;
     }
   }
