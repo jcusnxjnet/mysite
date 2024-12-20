@@ -5,9 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'link': '#0284c7',
         'other': '#64748b',
-        'line': '#cbd5e1'
+        'fanda': '#faf6cf',
       },
     },
   },

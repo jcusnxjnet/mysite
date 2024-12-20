@@ -14,7 +14,7 @@ eleventyNavigation:
 
 <div class="flex">
 <div class="w-20 text-other">{{ post.data.date | postDate }}</div>
-<div class="text-link hover:font-bold"><a href="{{ post.url }}">{{ post.data.title }}</a></div>
+<div><a href="{{ post.url }}">{{ post.data.title }}</a></div>
 </div>
 
 {% endfor %}

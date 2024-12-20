@@ -35,8 +35,8 @@ eleventyNavigation:
         <td>bpm</td>
       </tr>
       {% for item in google.monthly | sort(attribute='date') | reverse %}
-      <tr class="text-center border-t  border-line">
-        <td><a href="/log/{{ item.id }}/" class="text-link">{{
+      <tr class="text-center border-t">
+        <td><a href="/log/{{ item.id }}/">{{
             item.month | date({ year: "numeric", month: "short" }) }}</a></td>
         <td>{{ item.distance }}</td>
         <td>{{ item.duration }}</td>

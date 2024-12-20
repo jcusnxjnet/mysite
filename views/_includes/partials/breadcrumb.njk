@@ -6,7 +6,7 @@
     {% else %}    
     {% if not loop.last %}
 		<li class="inline-flex items-center">
-			<a href="{{ crumb.url }}" class="flex items-center text-other hover:font-bold">{{ crumb.title }}</a>
+			<a href="{{ crumb.url }}" class="flex items-center">{{ crumb.title }}</a>
             
             <svg class="shrink-0 mx-0.5 size-3.5 text-other" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m9 18 6-6-6-6"></path>
@@ -15,7 +15,7 @@
         </li>
     {% else %}
     <li class="inline-flex items-center">
-			<div class="flex items-center text-gray-500 dark:text-neutral-500">{{ crumb.title }}</div>
+			<div class="flex items-center">{{ crumb.title }}</div>
      </li></ol></nav>
     {% endif %}
     {% endif %}

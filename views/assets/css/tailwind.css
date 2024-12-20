@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 html {
-  font-size: 96%;
+  font-size: 97%;
 }
 
 @layer base {
   body {
-    @apply text-slate-800;
+    @apply text-gray-800;
+    @apply  dark:text-gray-200;
+    @apply  bg-fanda;
+    @apply  dark:bg-sky-950;
+    @apply font-sans;
+  }
+
+  a {
+    @apply text-sky-600;
+    @apply dark:text-sky-500;
+    @apply hover:font-semibold;
   }
 
   h1 {
@@ -16,12 +26,11 @@ html {
     @apply pt-4;
     @apply text-lg;
   }
-  h2 {
-    @apply font-medium;
-    @apply py-4;
-    @apply text-lg;
+
+  hr, tr {
+    @apply border-slate-300;
+    @apply dark:border-slate-700;
   }
   
 }
-
   
