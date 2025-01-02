@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sourceSans: ['"Bitter"', 'sans-serif'],
+        bitter: ['"Bitter"', 'sans-serif'],
       },
     },
   },
