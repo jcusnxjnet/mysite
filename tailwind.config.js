@@ -2,7 +2,11 @@
 export default {
   content: ["./views/**/*.{html,js,njk,md}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sourceSans: ['"Bitter"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
