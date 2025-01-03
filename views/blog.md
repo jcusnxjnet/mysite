@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Blog
 ---
 {% for item in collections.post %}
 <h1><a href="{{ item.url }}">{{ item.data.title }}</a></h1>

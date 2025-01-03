@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Running Log
 ---
 <div>
   <canvas id="myChart" data-chart='{{ google.monthly | jsonify }}'></canvas>

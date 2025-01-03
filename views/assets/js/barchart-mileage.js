@@ -27,13 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
       options: {
         plugins: {
           legend: {
-            display: false // Disable legend
+            display: false, // Disable legend
+            labels: {
+              font: {
+                family: 'Bitter, sans-serif' // Font family for legend labels
+              }
+            }
           },
           title: {
             display: true,
             text: 'Monthly distance',
             font: {
-              size: fontSizeInPx // Dynamically set font size in pixels
+              size: fontSizeInPx, // Dynamically set font size in pixels
+              family: 'Bitter, sans-serif'
             }
           },
           tooltip: {
@@ -45,6 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
           x: {
             grid: {
               display: false // Remove vertical gridlines
+            },
+            ticks: {
+              font: {
+                family: 'Bitter, sans-serif' // Font family for x-axis labels
+              }
             }
           },
           y: {
@@ -54,7 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
               text: 'km', // Label text
               font: {
                 size: 13, // Optional: set font size for the Y-axis label
-                style: 'italic'
+                style: 'italic',
+                family: 'Bitter, sans-serif'
+              }
+            },
+            ticks: {
+              font: {
+                family: 'Bitter, sans-serif' // Font family for x-axis labels
               }
             }
           }
