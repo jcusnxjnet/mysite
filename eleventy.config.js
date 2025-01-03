@@ -8,7 +8,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("views/assets/js");
 
 	// FILTERS
-	eleventyConfig.addFilter("postDate", (dateObj, format = "DDD", locale = "cs-CZ") => {
+	eleventyConfig.addFilter("postDate", (dateObj, format = "DDD", locale = "en-GB") => {
 		return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat(format);
 	  });
 

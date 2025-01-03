@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,14 +13,27 @@
 </head>
 
 <body class="font-bitter bg-slate-200">
-  <div class="relative max-w-screen-md min-h-full mx-auto">
-    <main class="py-24 px-4">
+  
+  <div class="max-w-screen-md mx-auto min-h-screen p-4">
+
+    <header class="flex flex-col justify-end h-10 md:h-20 mb-4">
+      <a href="/" class="font-medium hover:font-medium text-2xl text-black">jcusnxj</a>
+      <div>
+      <a href="/blog/" class="">blog</a> |
+      <a href="/log/" class="">log</a>
+      </div>
+      <hr class="border-slate-400">
+    </header>
+
+    <main class="min-h-[calc(100vh-7rem)] md:min-h-[calc(100vh-12rem)]">
 
       {% block content %}
       {{ content | safe }}
       {% endblock %}
 
     </main>
+    <footer class="h-10 md:h-20">
+    </footer>
   </div>
 </body>
 
