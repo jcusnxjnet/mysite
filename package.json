@@ -13,6 +13,8 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
     "luxon": "^3.5.0"
   },
   "devDependencies": {

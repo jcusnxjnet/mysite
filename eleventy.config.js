@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import 'dotenv/config'
 
 export default function(eleventyConfig) {
 	
@@ -8,8 +9,14 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("views/assets/js");
 
 	// FILTERS
+	// Date filter
 	eleventyConfig.addFilter("postDate", (dateObj, format = "DDD", locale = "en-GB") => {
 		return DateTime.fromJSDate(dateObj).setLocale(locale).toFormat(format);
+	  });
+
+	// jsonify filter
+	eleventyConfig.addFilter("jsonify", function(value) {
+		return JSON.stringify(value);
 	  });
 
 	// EXCERPTS
