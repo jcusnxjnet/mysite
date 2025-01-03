@@ -1,6 +1,6 @@
 {% extends "views/_layouts/base.njk" %}
 {% block content %}
-<h1 class="">{{ title }}</h1>
+<h1>{{ title }}</h1>
 <p class="text-sm pb-4">{{ date | postDate }}</p>
 {{ content | safe }} 
 {% endblock %}
